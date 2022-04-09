@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func  main()  {
+func main() {
 	x := 1
 	p := &x
 	fmt.Println(*p)
@@ -11,17 +11,17 @@ func  main()  {
 
 	var pp = f()
 	fmt.Println(*pp)
-    p1 := 2
+	p1 := 2
 	var p2 = incr(&p1)
 	fmt.Println(p2)
 
 	c := new(int)
 	fmt.Println(*c)
-	*c=2
+	*c = 2
 	fmt.Println(*c)
 }
 
-func  f() *int {
+func f() *int {
 	v := 1
 	return &v
 }
